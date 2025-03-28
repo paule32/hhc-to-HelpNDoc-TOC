@@ -553,9 +553,7 @@ begin
   HelpNDoc_[::HelpNDocProjectPRO::] := TProject.Create('[::HelpNDocProjectPRO::]');
   try
     print('1. pre-processing data...');
-    HelpNDoc_[::HelpNDocProjectPRO::].SetTemplate(
-      HelpNDocProjectPath + '\' +
-      HelpNDocTemplateHTM);
+    HelpNDoc_[::HelpNDocProjectPRO::].SetTemplate(HelpNDocTemplateHTM);
 """)
         # -----------------------------------------------------------------------
         for idx, t in enumerate(hhc_topics):

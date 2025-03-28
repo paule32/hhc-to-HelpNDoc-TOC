@@ -1,0 +1,143 @@
+object Form1: TForm1
+  Left = 330
+  Height = 213
+  Top = 145
+  Width = 368
+  Caption = 'Form1'
+  ClientHeight = 213
+  ClientWidth = 368
+  Menu = MainMenu1
+  LCLVersion = '3.4.0.0'
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 190
+    Width = 368
+    Panels = <>
+  end
+  object ControlBar1: TControlBar
+    Left = 0
+    Height = 52
+    Top = 0
+    Width = 368
+    Align = alTop
+    TabOrder = 1
+    object SpeedButton1: TSpeedButton
+      Left = 8
+      Height = 39
+      Top = 6
+      Width = 42
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 51
+      Height = 39
+      Top = 6
+      Width = 42
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 94
+      Height = 39
+      Top = 6
+      Width = 42
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 138
+    Top = 52
+    Width = 114
+    Align = alLeft
+    Caption = 'Panel1'
+    ClientHeight = 138
+    ClientWidth = 114
+    TabOrder = 2
+    object ListBox1: TListBox
+      Left = 1
+      Height = 136
+      Top = 1
+      Width = 112
+      Align = alClient
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Items.Strings = (
+        'Path'
+        'App A'
+        'App B'
+        'App C'
+      )
+      ItemHeight = 18
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 114
+    Height = 138
+    Top = 52
+    Width = 5
+  end
+  object PageControl1: TPageControl
+    Left = 119
+    Height = 138
+    Top = 52
+    Width = 249
+    ActivePage = TabSheet1
+    Align = alClient
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabIndex = 0
+    TabOrder = 4
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      ClientHeight = 110
+      ClientWidth = 241
+      object ScrollBox1: TScrollBox
+        Left = 0
+        Height = 110
+        Top = 0
+        Width = 241
+        HorzScrollBar.Page = 231
+        VertScrollBar.Page = 50
+        Align = alClient
+        ClientHeight = 106
+        ClientWidth = 237
+        TabOrder = 0
+        object DirectoryEdit1: TDirectoryEdit
+          Left = 8
+          Height = 26
+          Top = 24
+          Width = 223
+          ShowHidden = False
+          ButtonWidth = 23
+          NumGlyphs = 1
+          MaxLength = 0
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 208
+    Top = 8
+    object MenuItem1: TMenuItem
+      Caption = 'File'
+      object MenuItem4: TMenuItem
+        Caption = 'Exit App'
+        OnClick = MenuItem4Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Help'
+      object MenuItem3: TMenuItem
+        Caption = 'About...'
+      end
+    end
+  end
+end
